@@ -80,6 +80,11 @@ header{
     width: 100%;
 }
 
+.header-logo img{
+    width: 400px;
+    height: 380px;
+}
+
 .header-content{
     display: flex;
     align-items: center;
@@ -116,18 +121,18 @@ i:hover{
 }
 
 .header-button{
-    border: 1px solid var(--primary-green);
+    border: 1px solid var(--primary-light);
     padding: 8px 24px;
     border-radius: 4px;
     color: var(--white-normal);
-    background-color: transparent;
+    background-color: var(--primary-green);
     transition:  background-color 0.8s;
 }
 
 .header-button:hover{
     border: 1px solid var(--white-normal);
-    background-color: var(--primary-green);
-    color: var(--white-normal);
+    background-color: var(--primary-light);
+    color: var(--primary-green);
     animation: scaleButton 0.8s alternate infinite;
 }
 
@@ -159,8 +164,8 @@ i:hover{
         
     }
     .header-logo{
-        width: 230px;
-        height: 70px;
+        width: 300px;
+        height: 220px;
         margin-top: 30px;
     }
 
@@ -184,7 +189,9 @@ i:hover{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 14px;
+   
+    
+    
 }
 
 span{
@@ -197,6 +204,7 @@ span{
     line-height: 150%;
     max-width: 940px;
     font-size: 46px;
+    margin: 40px;
     
 }
 
@@ -204,8 +212,14 @@ span{
     .header-content{
         display:flex;
         align-items: center;
-        gap: 60px;
+        
+    }
 
+
+    .header-logo img {
+        width: 500px;
+        height: 300px;
+        
     }
 
     .header-button.btn{
@@ -214,20 +228,24 @@ span{
     
     .header-button{
         display: inline;
-        margin: 12px;
+        margin: 40px;
         
     }
 
 
     .hero h1{
-        font-size: 20px;
-        margin-top: 450px;
+        font-size: 30px;
+        
         
     }
 
    
     span{
-        font-size: 30px;
+        font-size: 35px;
+    }
+
+    .about-content{
+        flex-direction: column;
     }
 }
 
@@ -243,11 +261,12 @@ span{
     align-items: center;
     justify-content: center;
     gap: 14px;
+    padding: 34px 14px 64px 14px;
 }
 
 .about-content img{
     max-width: 500px;
-    border: 1px solid var(--primary-green);
+    border: 2px solid #03fa6e8b;
     border-radius: 20px;
     
 }
@@ -256,4 +275,64 @@ span{
     flex: 1;
 }
 
+.about-description h2{
+    font-size: 48px;
+    margin-bottom: 24px;
+
+
+}
+
+.about-description p{
+    margin-bottom: 14px;
+    line-height: 150%;
+}
+
+.section-project{
+    background-color: var(--white-normal);
+    color: var(--black-normal);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 54px 14px;
+}
+
+.project-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px;
+}
+
+.project-content h2{
+    font-size: 48px;
+    
+}
+
+.project img{
+    width: 70%;
+    height: 30%;
+    border: 2px solid #03fa6e8b;
+    border-radius: 20px;
+}
+
+.projects{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary-normal);
+    border-radius: 20px;
+}
+
+.project{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    margin: 30px;
+    color: var(--white-normal);
+}
 
