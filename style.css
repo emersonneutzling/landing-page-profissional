@@ -336,3 +336,39 @@ span{
     color: var(--white-normal);
 }
 
+.btn-whatssapp{
+    position: fixed;
+    bottom: 14px;
+    right: 24px;
+    z-index: 99;
+}
+
+.btn-whatssapp img{
+    max-width: 74px;
+    transition: transform 0.5s ease;
+}
+
+.btn-whatssapp img:hover{
+    transform: scale(1.1);
+}
+
+.btn-whatssapp .text-whats{
+    visibility: hidden;
+    position: absolute;
+    width: 120px;
+    top: 8px;
+    left: -130px;
+    background-color: var(--primary-green);
+    color: var(--white-normal);
+    font-size: 15px;
+    padding: 8px;
+    text-align: center;
+    border-radius: 8px;
+    opacity: 0;
+    transition: opacity 0.6s;
+}
+
+.btn-whatssapp:hover .text-whats{
+    visibility: visible;
+    opacity: 1;
+}
